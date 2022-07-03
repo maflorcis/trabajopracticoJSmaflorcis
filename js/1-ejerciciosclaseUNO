@@ -4,4 +4,4 @@ document.write(3+5);
 //lo vimos en clase
 let nombre= prompt('Cual est tu nombre?');
 console.log(nombre)
-document.write('Hola' + nombre)
+document.write('<br>Hola: ' + nombre)
