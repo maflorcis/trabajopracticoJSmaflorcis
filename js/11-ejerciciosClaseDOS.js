@@ -18,3 +18,5 @@ let numeroRandom = parseInt(prompt('Ingrese el numero para ver si es divisible p
     }
 }
 }
+
+
