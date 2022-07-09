@@ -2,6 +2,7 @@
 número deberá indicarse con un «alert» y seguir pidiendo números. Al salir con
 “cancelar” deberá indicarse la suma total de los números introducidos.*/
 
+
 var suma = 0; //DECLARAMOS LA VARIABLE SUMA Y BUCLE DO WHILE PARA INTRODUCIR VARIOS
 
 do {
@@ -28,3 +29,5 @@ document.write(suma);
 //SI SE PULSÓ ACEPTAR SIN PONER UN NÚMERO VÁLIDO
 //VOLVEMOS ARRIBA MIENTRAS NO SE PULSE CANCELAR
 //SI SE PULSÓ CANCELAR SALE DEL BUCLE E IMPRIME EL RESULTADO
+
+
