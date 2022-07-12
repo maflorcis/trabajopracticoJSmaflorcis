@@ -44,16 +44,21 @@ Si, por
 
 let filas = parseInt(prompt("ingrese un número de filas"));
 let columnas = parseInt(prompt("Ingrese un número de columnas"));
+let resultado = filas * columnas; //a las variables las debo crear arriba para que se puedan usar
 
-document.write(`<table><tbody>`);
+document.write(`<table> <tbody>`);
 
 //este se encarga de dibujar las filas
 
-for (let indiceFila = 0; indiceFila <= filas; indiceFila++ )
-document.write(`<table>
-    <tr>
-        <td>pueba</td>
-        <td>dato</td>
-       </tr>`);
+for (let indiceFila = 0; indiceFila < filas; indiceFila++){
+  document.write(`<tr>`);
+for (let indiceColumna = 0; indiceColumna < columnas; indiceColumna++) {
+  document.write(`<td>${resultado}</td>`); //document.write('<td>'+resultado+'/td>');
+  resultado--;
+}
+
+document.write(`</tr>`);
+}
+
 
 document.write(`<table><tbody>`);
