@@ -10,6 +10,7 @@ preguntar.
 Deberá de repetirse el proceso hasta que el usuario pulse «cancelar».
 */
 
+/*
 while (confirm("Click Aceptar para ingresar su DNI") == true) {
     let numero = parseInt(prompt("Ingrese su número de DNI: "));
     if (isNaN(numero) === false && numero >= 0 && numero <= 99999999) {
@@ -41,7 +42,8 @@ while (confirm("Click Aceptar para ingresar su DNI") == true) {
     }
   }
   
-  
+  */
+
   /*
   isNaN : usé esta función porque su mecánica es que intenta convertir el parámetro pasado a un número. Si el parámetro no se puede convertir, devuelve true; en caso contrario, devuelve false.
   https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/isNaN
@@ -51,3 +53,116 @@ while (confirm("Click Aceptar para ingresar su DNI") == true) {
   a) Si el resultado es false: entonces quiere decir que es una cifra numérica,  y se acumula en la variable numero.
   b) Por el contrario, si es true: entonces quiere decir que no es una cifra numérica, no se puede convertir a número, lo que deriva en que se ejecute el alert. 
   */
+
+//EXPLICADO POR LA PROFE
+
+//Ingresar un DNI debe ser entre 0 y 99999999
+
+//Calcular el resto de la división entera entre el número y el número 23
+
+/*el resultado de 0 a 22, corresponde a un a de las siguientes letras: (T, R,
+W, A, G, M, Y, F, P, D, X, B, N, J, Z, S, Q, V, H, L, C, K, E)*/
+
+//si el dni cargado no es un número mostrar con un alert
+
+//repetir todo el proceso hasta que el usuario presione cancelar
+
+
+
+
+do{
+
+let numero = parseInt(prompt('Ingrese un numero de DNI, entre (0 y 99999999'));
+console.log(numero);
+if( numero>0 && numero <= 99999999 ){
+
+let resultado = numero % 23;
+
+console.log(resultado);
+
+switch(resultado){
+  case 0:
+      document.write('La letra que corresponde a su DNI es la T, DNI ingresadp '+numero);
+      console.log('T');
+      break;
+      case 01:
+      document.write('La letra que corresponde a su DNI es la r, DNI ingresadp '+numero);
+      break;
+      case 2:
+      document.write('La letra que corresponde a su DNI es la w, DNI ingresadp '+numero);
+      break;
+      case 3:
+      document.write('La letra que corresponde a su DNI es la a, DNI ingresadp '+numero);
+      break;
+      case 4:
+      document.write('La letra que corresponde a su DNI es la g, DNI ingresadp '+numero);
+      break;
+      case 5:
+      document.write('La letra que corresponde a su DNI es la m, DNI ingresadp '+numero);
+      break;
+      case 6:
+      document.write('La letra que corresponde a su DNI es la y, DNI ingresadp '+numero);
+      break;
+      case 7:
+      document.write('La letra que corresponde a su DNI es la f, DNI ingresadp '+numero);
+      break;
+      case 8:
+      document.write('La letra que corresponde a su DNI es la d, DNI ingresadp '+numero);
+      break;
+      case 9:
+      document.write('La letra que corresponde a su DNI es la x, DNI ingresadp '+numero);
+      break;
+      case 10:
+      document.write('La letra que corresponde a su DNI es la b, DNI ingresadp '+numero);
+      break;
+      case 11:
+      document.write('La letra que corresponde a su DNI es la n, DNI ingresadp '+numero);
+      break;
+      case 12:
+      document.write('La letra que corresponde a su DNI es la j, DNI ingresadp '+numero);
+      break;
+      case 13:
+        document.write('La letra que corresponde a su DNI es la s, DNI ingresadp '+numero);
+        break;
+        case 14:
+      document.write('La letra que corresponde a su DNI es la v, DNI ingresadp '+numero);
+      break;
+      case 15:
+      document.write('La letra que corresponde a su DNI es la n, DNI ingresadp '+numero);
+      break;
+      case 16:
+      document.write('La letra que corresponde a su DNI es la q, DNI ingresadp '+numero);
+      break;
+      case 17:
+      document.write('La letra que corresponde a su DNI es la b, DNI ingresadp '+numero);
+      alert('La letra corresponde a su DNI es la V, DNI ingresado' + numero)
+      break;
+      case 18:
+      document.write('La letra que corresponde a su DNI es la l, DNI ingresadp '+numero);
+      break;
+      case 19:
+      document.write('La letra que corresponde a su DNI es la h, DNI ingresadp '+numero);
+      break;
+      case 20:
+      document.write('La letra que corresponde a su DNI es la n, DNI ingresadp '+numero);
+      break;
+      case 21:
+      document.write('La letra que corresponde a su DNI es la c, DNI ingresadp '+numero);
+      break;
+      case 22:
+      document.write('La letra que corresponde a su DNI es la k, DNI ingresadp '+numero);
+      break;
+      case 23:
+      document.write('La letra que corresponde a su DNI es la e, DNI ingresadp '+numero);
+      break;
+
+      default:
+        alert('Ingresaste una opción errónea')
+
+}
+}else{
+
+  alert('Ingresó un número erróneo')
+
+}
+}while((confirm('Desea ingresar un DNI?')))
