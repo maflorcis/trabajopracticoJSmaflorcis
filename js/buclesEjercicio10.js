@@ -3,7 +3,7 @@ Dentro de cada una de las celdas deberá escribirse un número consecutivo en or
 Si, por ejemplo, la tabla es de 7×5 los números irán del 35 al 1.
 */
 
-/*
+
 let fila =parseInt(prompt("Inserte el número de filas deseado: "))
 let columna =parseInt(prompt("Inserte el número de columnas deseado: "))
 let numeroCelda = fila*columna;
@@ -31,7 +31,7 @@ const createTable = (row, col) => {
   https://stackoverflow.com/questions/14643617/create-table-using-javascript
 */
 
-/* 10- Realiza un script que pida número de filas y columnas y escriba una tabla. 
+/* ALTERNATIVA EN CLASE 10- Realiza un script que pida número de filas y columnas y escriba una tabla. 
 Dentro de cada una de las celdas deberá escribirse un número consecutivo en orden descendente. 
 Si, por 
 
@@ -41,6 +41,8 @@ Si, por
 
 //cada celda debe tener un número descendente de multiplicar filas por columnas
 */
+
+/*
 
 let filas = parseInt(prompt("ingrese un número de filas"));
 let columnas = parseInt(prompt("Ingrese un número de columnas"));
@@ -62,3 +64,4 @@ document.write(`</tr>`);
 
 
 document.write(`<table><tbody>`);
+*/

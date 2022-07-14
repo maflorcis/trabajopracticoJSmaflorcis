@@ -10,7 +10,7 @@ preguntar.
 Deberá de repetirse el proceso hasta que el usuario pulse «cancelar».
 */
 
-/*
+
 while (confirm("Click Aceptar para ingresar su DNI") == true) {
     let numero = parseInt(prompt("Ingrese su número de DNI: "));
     if (isNaN(numero) === false && numero >= 0 && numero <= 99999999) {
@@ -42,7 +42,7 @@ while (confirm("Click Aceptar para ingresar su DNI") == true) {
     }
   }
   
-  */
+  
 
   /*
   isNaN : usé esta función porque su mecánica es que intenta convertir el parámetro pasado a un número. Si el parámetro no se puede convertir, devuelve true; en caso contrario, devuelve false.
@@ -69,7 +69,7 @@ W, A, G, M, Y, F, P, D, X, B, N, J, Z, S, Q, V, H, L, C, K, E)*/
 
 
 
-
+/* ALTERNATIVA EN CLASE
 do{
 
 let numero = parseInt(prompt('Ingrese un numero de DNI, entre (0 y 99999999'));
@@ -166,3 +166,5 @@ switch(resultado){
 
 }
 }while((confirm('Desea ingresar un DNI?')))
+
+*/

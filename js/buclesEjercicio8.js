@@ -10,11 +10,12 @@ que indique el usuario (no mayor de 50)
 ……
 */
 
-var numrep = prompt("Introduce numero de repeticiones");
+let numrep = prompt("Introduce numero de repeticiones");
+let rep
 
 if (Number(numrep) == numrep) {
   if (numrep > 0 && numrep <= 50) {
-    var rep, i;
+     let rep, i;
 
     for (i = 0; i <= numrep; i++) {
       for (rep = 1; rep <= i; rep++) {

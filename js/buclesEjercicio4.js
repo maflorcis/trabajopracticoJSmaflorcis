@@ -3,10 +3,11 @@ número deberá indicarse con un «alert» y seguir pidiendo números. Al salir 
 “cancelar” deberá indicarse la suma total de los números introducidos.*/
 
 
-var suma = 0; //DECLARAMOS LA VARIABLE SUMA Y BUCLE DO WHILE PARA INTRODUCIR VARIOS
+let suma = 0; //DECLARAMOS LA VARIABLE SUMA Y BUCLE DO WHILE PARA INTRODUCIR VARIOS
+let numero
 
 do {
-  var numero = prompt("Introduce un número");
+   numero = prompt("Introduce un número");
 
   if (Number(numero) == numero) {
     numero = Number(numero);

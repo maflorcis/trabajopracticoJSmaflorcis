@@ -6,10 +6,11 @@ tal”, deberá salir “h-o-l-a- -q-u-e- -t-a-l”.
 */
 
 
-var cadena = prompt("Introduce un texto:");
-var numchar = cadena.length;    
-var caracter;
-var i;
+let cadena = prompt("Introduce un texto:");
+let numchar = cadena.length;    
+let caracter;
+let i;
+
 for (i = 0; i < numchar; i++) {
 caracter = cadena.charAt(i);    
 if (i == numchar - 1) {
