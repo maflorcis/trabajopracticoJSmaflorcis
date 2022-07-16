@@ -3,3 +3,22 @@
 entero y devuelve como resultado una cadena de texto que indica si el número es
 par o impar. Mostrar por pantalla el resultado devuelto por la función.
 */
+
+
+let numero = prompt("Introduce un número entero");
+ 
+let resultado = parImpar(numero);
+
+
+function parImpar(numero) {
+    if(numero % 2 == 0) {
+      return "par";
+    }
+    else {
+      return "impar";
+    }
+  }
+  
+
+alert("El número "+numero+" es "+resultado);
+ 
